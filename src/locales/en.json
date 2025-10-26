@@ -1,0 +1,32 @@
+{
+  "navigation": {
+    "home": "Home",
+    "story": "Story",
+    "collection": "Collection",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to PaidStyle",
+    "subtitle": "Discover premium fashion and style",
+    "cta": "Explore Collection"
+  },
+  "story": {
+    "title": "Our Story",
+    "content": "PaidStyle was born from a passion for premium fashion and quality craftsmanship. We believe that style is not just about what you wear, but how you feel when you wear it."
+  },
+  "collection": {
+    "title": "Our Collection",
+    "subtitle": "Curated pieces for the modern lifestyle"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. All rights reserved.",
+    "follow": "Follow Us"
+  }
+}

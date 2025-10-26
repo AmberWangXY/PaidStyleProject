@@ -1,0 +1,32 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "story": "Histoire",
+    "collection": "Collection",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bienvenue chez PaidStyle",
+    "subtitle": "Découvrez la mode premium et le style",
+    "cta": "Explorer la Collection"
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "content": "PaidStyle est né d'une passion pour la mode premium et l'artisanat de qualité. Nous croyons que le style ne concerne pas seulement ce que vous portez, mais comment vous vous sentez quand vous le portez."
+  },
+  "collection": {
+    "title": "Notre Collection",
+    "subtitle": "Pièces sélectionnées pour le mode de vie moderne"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer le Message"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. Tous droits réservés.",
+    "follow": "Suivez-nous"
+  }
+}
