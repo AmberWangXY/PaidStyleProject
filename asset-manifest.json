@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/PaidStyleProject/static/js/main.16a44311.js",
-    "static/media/contactBG.png": "/PaidStyleProject/static/media/contactBG.61d086621b81313d93f8.png",
-    "static/media/storyBG.png": "/PaidStyleProject/static/media/storyBG.16e460a9f780060ae5af.png",
-    "static/media/HomeBgPic.jpg": "/PaidStyleProject/static/media/HomeBgPic.f1487457502c5ba366a7.jpg",
-    "static/media/IconBySequence.svg": "/PaidStyleProject/static/media/IconBySequence.5ffaeb4cf6724e03d24cf9566f06da18.svg",
-    "static/media/candle02.jpg": "/PaidStyleProject/static/media/candle02.b01a12794ea819eab24a.jpg",
-    "static/media/candle11.jpg": "/PaidStyleProject/static/media/candle11.c3df5e04e13a5447dfd7.jpg",
-    "static/media/client2.png": "/PaidStyleProject/static/media/client2.8538b801268d9588b3d7.png",
-    "static/media/client4.png": "/PaidStyleProject/static/media/client4.b231acaad08f7ba5e512.png",
-    "static/media/client3.png": "/PaidStyleProject/static/media/client3.eb7a1de06fdb32f87569.png",
-    "static/media/client1.png": "/PaidStyleProject/static/media/client1.ef3e6069fec55f005670.png",
-    "static/media/candle00.jpg": "/PaidStyleProject/static/media/candle00.48c96fbb4eeed12d4b19.jpg",
-    "static/media/candle12.jpg": "/PaidStyleProject/static/media/candle12.2fed2d03315a23a2e956.jpg",
-    "static/media/logoIcon2.png": "/PaidStyleProject/static/media/logoIcon2.6e1e4a30b57f62270f39.png",
-    "static/media/logoIcon.svg": "/PaidStyleProject/static/media/logoIcon.571a29d559bb8829cd4a696d8f2192ba.svg",
-    "static/media/Logo.svg": "/PaidStyleProject/static/media/Logo.0ecbdb136ccc69f991c033cf3aa5d4bd.svg",
-    "index.html": "/PaidStyleProject/index.html",
-    "main.16a44311.js.map": "/PaidStyleProject/static/js/main.16a44311.js.map"
+    "main.js": "/static/js/main.3b04060c.js",
+    "static/media/contactBG.png": "/static/media/contactBG.61d086621b81313d93f8.png",
+    "static/media/storyBG.png": "/static/media/storyBG.16e460a9f780060ae5af.png",
+    "static/media/HomeBgPic.jpg": "/static/media/HomeBgPic.f1487457502c5ba366a7.jpg",
+    "static/media/IconBySequence.svg": "/static/media/IconBySequence.5ffaeb4cf6724e03d24cf9566f06da18.svg",
+    "static/media/candle02.jpg": "/static/media/candle02.b01a12794ea819eab24a.jpg",
+    "static/media/candle11.jpg": "/static/media/candle11.c3df5e04e13a5447dfd7.jpg",
+    "static/media/client2.png": "/static/media/client2.8538b801268d9588b3d7.png",
+    "static/media/client4.png": "/static/media/client4.b231acaad08f7ba5e512.png",
+    "static/media/client3.png": "/static/media/client3.eb7a1de06fdb32f87569.png",
+    "static/media/client1.png": "/static/media/client1.ef3e6069fec55f005670.png",
+    "static/media/candle00.jpg": "/static/media/candle00.48c96fbb4eeed12d4b19.jpg",
+    "static/media/candle12.jpg": "/static/media/candle12.2fed2d03315a23a2e956.jpg",
+    "static/media/logoIcon2.png": "/static/media/logoIcon2.6e1e4a30b57f62270f39.png",
+    "static/media/logoIcon.svg": "/static/media/logoIcon.571a29d559bb8829cd4a696d8f2192ba.svg",
+    "static/media/Logo.svg": "/static/media/Logo.0ecbdb136ccc69f991c033cf3aa5d4bd.svg",
+    "index.html": "/index.html",
+    "main.3b04060c.js.map": "/static/js/main.3b04060c.js.map"
   },
   "entrypoints": [
-    "static/js/main.16a44311.js"
+    "static/js/main.3b04060c.js"
   ]
 }
