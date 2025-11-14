@@ -17,54 +17,40 @@ import iconImage from "../assets/homepageIMG/logoIcon.svg";
 import iconSequence from "../assets/homepageIMG/IconBySequence.svg";
 import { ContentContainer } from "../components/Layout/ContentContainer";
 import { ContentGrid } from "../components/HomePage/ContentGrid";
-const HeroMarquee = () => {
-  return (
-    <Marquee
-      speed={80}
-      gradient={false}
-      pauseOnHover={false}
-      style={{ overflow: "hidden", whiteSpace: "nowrap" }}
-    >
-      <Text
-        color="brand.main"
-        fontWeight="semibold"
-        fontSize={{ base: "5xl", md: "7xl" }}
-        letterSpacing="wide"
-        lineHeight="1.2"
-        mx="40px" // 左右留白
-      >
-        Paidstyle — a quiet ritual of living.
-      </Text>
-    </Marquee>
-  );
-};
+
 const HomePage = () => {
   const { t } = useTranslation();
-
-  const features = [
-    {
-      title: "Premium Quality",
-      description: "Handpicked materials and craftsmanship",
-    },
-    {
-      title: "Modern Design",
-      description: "Contemporary styles for the modern lifestyle",
-    },
-    {
-      title: "Sustainable",
-      description: "Eco-friendly and ethical fashion choices",
-    },
-  ];
+  const HeroMarquee = () => {
+    return (
+      <Marquee
+        speed={80}
+        gradient={false}
+        pauseOnHover={false}
+        style={{ overflow: "hidden", whiteSpace: "nowrap" }}
+      >
+        <Text
+          color="brand.main"
+          fontWeight="semibold"
+          fontSize={{ base: "5xl", md: "7xl" }}
+          letterSpacing="wide"
+          lineHeight="1.2"
+          mx="40px" // 左右留白
+        >
+          {t("home.marquee")}
+        </Text>
+      </Marquee>
+    );
+  };
 
   return (
     <Box bg="brand.light">
       {/* Hero Section */}
       <Image
-        w="100vw"
         src={brandImage}
-        bgSize="cover"
-        bgPosition="center"
-        bgRepeat="no-repeat"
+        w="100vw"
+        h={{ base: "75vw", md: "auto" }}
+        objectFit="cover"
+        objectPosition="center"
       />
       <Box py="6.5vw">
         <ContentGrid />
@@ -77,7 +63,7 @@ const HomePage = () => {
             fontWeight="medium"
             _hover={{ textDecoration: "none" }}
           >
-            More Products
+            {t("home.more-product")}
           </ChakraLink>
         </Box>
         <Box pt="6.5vw">
@@ -97,11 +83,10 @@ const HomePage = () => {
             <Flex w="full" py={8}>
               <Box flex="1">
                 <Heading mb={4} color={"brand.main"}>
-                  Brand symbolism
+                  {t("home.Brand-symbolism")}
                 </Heading>
-                <Text w={"34vw"}>
-                  The hedgehog symbolizes：A hedgehog’s spines may be small, yet
-                  it still uses them to guard its quiet persistence.
+                <Text w={{ md: "34vw", base: "full" }}>
+                  {t("home.Brand-symbolism-text")}
                 </Text>
               </Box>
             </Flex>

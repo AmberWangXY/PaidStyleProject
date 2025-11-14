@@ -7,26 +7,69 @@
   },
   "home": {
     "title": "Bienvenido a PaidStyle",
-    "subtitle": "Descubre la moda premium y el estilo",
-    "cta": "Explorar Colección"
+    "subtitle": "Descubre la moda y el estilo de alta calidad",
+    "cta": "Explorar la colección",
+    "marquee": "Paidstyle — un ritual tranquilo de vivir.",
+    "more-product": "Más productos",
+    "Brand-symbolism": "Simbolismo de la marca",
+    "Brand-symbolism-text": "El erizo simboliza que sus espinas pueden ser pequeñas, pero las usa para proteger su tranquila perseverancia.",
+    "grid-content-text": "Nuestras velas están hechas con cera de soja 100% natural, vertidas a mano en pequeños lotes para garantizar una combustión limpia y duradera.",
+    "grid-content1": "Vela Signature Original de Paidstyle",
+    "grid-price": "USD $52.00"
   },
   "story": {
     "title": "Nuestra Historia",
-    "content": "PaidStyle nació de una pasión por la moda premium y la artesanía de calidad. Creemos que el estilo no se trata solo de lo que usas, sino de cómo te sientes cuando lo usas."
+    "content": "PaidStyle nació de una pasión por la moda de alta gama y la artesanía de calidad. Creemos que el estilo no se trata solo de lo que usas, sino de cómo te sientes al llevarlo.",
+    "point-of-origin": "Punto de origen",
+    "where-it-begin": "Donde\n   Todo\nComenzó",
+    "where-it-brgin-text": "Una vez cuidé a dos erizos en Los Ángeles. Parecían demasiado a la defensiva, demasiado afilados. Así que los liberé en las colinas de Hollywood.\nAl verlos desaparecer en la naturaleza, comprendí que sus púas no eran un arma, sino una coraza protectora — una defensa suave para sobrevivir en un mundo vasto.\nEntonces lo entendí: al igual que esos erizos, las personas con un estilo marcado lo usan como protección para mantenerse fieles a sí mismas.\nPaidstyle existe para celebrar y proteger esta armadura personal a través de nuestros productos.",
+    "Brand-Philosophy": "Filosofía de la marca",
+    "Brand-Philosophy-text": "Paidstyle es una marca de fragancias y estética de estilo de vida basada en los principios de sinceridad, moderación y calidez. Defiende la filosofía de “pagar por tu estilo”, transformando los detalles cotidianos en una práctica de elegancia personal mediante materiales y artesanía."
   },
   "collection": {
     "title": "Nuestra Colección",
-    "subtitle": "Piezas curadas para el estilo de vida moderno"
+    "subtitle": "Piezas seleccionadas para el estilo de vida moderno",
+    "Customization": "Personalización",
+    "Moment": "Momento",
+    "Signature": "Firma",
+    "Signature-collection": "Colección Signature",
+    "Signature-collection1": "<bold>Vela Mini Signature</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>Set de Fragancias</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>Vela Signature de Temporada</bold> \nUSD $39.00",
+    "button-next": "Siguiente",
+    "button-previous": "Anterior",
+    "moment-collection1": "<bold>Mini Vela</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>Bruma Capilar Perfumada</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>Set de Confort</bold> \nUSD $21.99",
+    "moment1": "Coco Marino",
+    "moment2": "Neroli de la Costa",
+    "moment3": "Osmanto del Té",
+    "moment4": "Pera de Nieve",
+    "moment5": "Criaturas de Espinas",
+    "moment6": "Jardín Blanco",
+    "moment7": "Magnolia del Acantilado"
   },
   "contact": {
-    "title": "Ponte en Contacto",
+    "title": "Ponte en contacto",
     "name": "Nombre",
-    "email": "Correo Electrónico",
+    "email": "Correo electrónico",
     "message": "Mensaje",
-    "send": "Enviar Mensaje"
+    "send": "Enviar mensaje",
+    "phone": "Teléfono",
+    "submit": "Enviar",
+    "typical-clients": "Nuestros clientes típicos",
+    "typical-clients1": "Restaurante",
+    "typical-clients2": "Librería",
+    "typical-clients3": "Hotel",
+    "typical-clients4": "Empresa",
+    "welcome": "¡Bienvenido a ponerte en contacto!"
   },
   "footer": {
     "copyright": "© 2024 PaidStyle. Todos los derechos reservados.",
-    "follow": "Síguenos"
+    "follow": "Síguenos",
+    "Rednote": "RedNote",
+    "address": "Sala D07, 8/F, Fase 2, Edificio Industrial Kai Tak, 99 King Fuk Street, San Po Kong, Hong Kong.",
+    "pages": "Páginas",
+    "wechat": "WeChat"
   }
 }

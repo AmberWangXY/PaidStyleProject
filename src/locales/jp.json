@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "story": "記録",
+    "collection": "コレクション",
+    "contact": "連絡"
+  },
+  "home": {
+    "title": "PaidStyle へようこそ",
+    "subtitle": "上質なファッションとスタイルを見つける",
+    "cta": "コレクションを探す",
+    "marquee": "Paidstyle —— 静かな生活の儀式。",
+    "more-product": "もっと見る",
+    "Brand-symbolism": "ブランドの象徴",
+    "Brand-symbolism-text": "ハリネズミの象徴：棘は小さいかもしれないが、その静かな粘り強さを守るために使われている。",
+    "grid-content-text": "私たちのキャンドルは100％天然のソイワックスを使用し、少量ずつ手作業で注がれており、クリーンで長持ちする燃焼を実現します。",
+    "grid-content1": "Paidstyle オリジナルシグネチャーキャンドル",
+    "grid-price": "USD $52.00"
+  },
+  "story": {
+    "title": "私たちの物語",
+    "content": "PaidStyle は、高品質なファッションと職人技への情熱から生まれました。スタイルとは、身にまとうものだけでなく、それを身に着けたときに感じる心のあり方でもあると私たちは信じています。",
+    "point-of-origin": "原点",
+    "where-it-begin": "すべてが\n   始まった\n場所",
+    "where-it-brgin-text": "私はかつてロサンゼルスで二匹のハリネズミを飼っていました。彼らはあまりにも警戒心が強く、鋭すぎるように見えました。そこで、私は彼らをハリウッドの丘に放しました。 \n野生の中へ消えていく姿を見ながら、彼らのトゲは武器ではなく、広い世界で生きるための優しい防御、守るための殻なのだと気づきました。 \nその瞬間、私は悟りました——あのハリネズミたちのように、鋭いスタイルを持つ人々もまた、自分らしさを守るためにそれを身にまとっているのだと。 \nPaidstyle は、その個人的な“鎧”を祝福し、守るために存在しています。",
+    "Brand-Philosophy": "ブランド哲学",
+    "Brand-Philosophy-text": "Paidstyle は、誠実・節度・温かさという理念に根ざしたフレグランスとライフスタイル美学ブランドです。“自分のスタイルに価値を払う”という哲学を掲げ、素材と職人技を通じて、日常の細部を個人の優雅さの実践へと昇華します。"
+  },
+  "collection": {
+    "title": "コレクション",
+    "subtitle": "現代のライフスタイルに合わせた厳選アイテム",
+    "Customization": "カスタマイズ",
+    "Moment": "モーメント",
+    "Signature": "シグネチャー",
+    "Signature-collection": "シグネチャーコレクション",
+    "Signature-collection1": "<bold>ミニシグネチャーキャンドル</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>フレグランスセット</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>シーズナルシグネチャーキャンドル</bold> \nUSD $39.00",
+    "button-next": "次へ",
+    "button-previous": "前へ",
+    "moment-collection1": "<bold>ミニキャンドル</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>ヘアフレグランスミスト</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>コンフォートセット</bold> \nUSD $21.99",
+    "moment1": "海辺のココナッツ",
+    "moment2": "半島のネロリ",
+    "moment3": "茶園のキンモクセイ",
+    "moment4": "雪霧の梨",
+    "moment5": "棘のある生き物",
+    "moment6": "白い庭園",
+    "moment7": "崖のマグノリア"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "send": "メッセージを送信",
+    "phone": "電話番号",
+    "submit": "送信",
+    "typical-clients": "主なお客様",
+    "typical-clients1": "レストラン",
+    "typical-clients2": "書店",
+    "typical-clients3": "ホテル",
+    "typical-clients4": "企業",
+    "welcome": "お気軽にお問い合わせください！"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. 全著作権所有。",
+    "follow": "フォローする",
+    "Rednote": "RedNote",
+    "address": "香港九龍新蒲崗 King Fuk Street 99号 啓徳工業ビル 第2期 8階 D07室",
+    "pages": "ページ",
+    "wechat": "WeChat"
+  }
+}

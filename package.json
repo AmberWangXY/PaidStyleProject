@@ -2,7 +2,6 @@
   "name": "paidstyle-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AmberWangXY.github.io/PaidStyleProject",
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^2.8.2",
@@ -29,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/AmberWangXY/PaidStyleProject.git"
   },
   "eslintConfig": {
     "extends": [

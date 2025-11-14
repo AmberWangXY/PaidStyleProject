@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "홈",
+    "story": "스토리",
+    "collection": "제품 모음",
+    "contact": "문의하기"
+  },
+  "home": {
+    "title": "PaidStyle에 오신 것을 환영합니다",
+    "subtitle": "프리미엄 패션과 스타일을 발견하세요",
+    "cta": "컬렉션 둘러보기",
+    "marquee": "Paidstyle —— 조용한 삶의 의식.",
+    "more-product": "더 많은 제품",
+    "Brand-symbolism": "브랜드 상징성",
+    "Brand-symbolism-text": "고슴도치의 상징성：작은 가시일지라도 조용한 고집을 지키기 위해 사용된다.",
+    "grid-content-text": "저희 캔들은 100% 천연 소이 왁스로 제작되며, 깨끗하고 오래 지속되는 연소를 위해 소량으로 수작업 제작됩니다.",
+    "grid-content1": "Paidstyle 오리지널 시그니처 캔들",
+    "grid-price": "USD $52.00"
+  },
+  "story": {
+    "title": "우리의 이야기",
+    "content": "PaidStyle은 프리미엄 패션과 장인정신에 대한 열정에서 탄생했습니다. 우리는 스타일이 단지 옷차림이 아니라, 그것을 입었을 때 느껴지는 감정이라고 믿습니다.",
+    "point-of-origin": "시작점",
+    "where-it-begin": "모든 것이\n   시작된\n곳",
+    "where-it-brgin-text": "나는 한때 LA에서 두 마리의 고슴도치를 키웠습니다. 그들은 늘 너무 방어적이고, 너무 날카로워 보였습니다. 그래서 나는 그들을 할리우드 힐에 방사했습니다. \n야생 속으로 사라지는 그들을 보며, 그들의 가시는 무기가 아니라 넓은 세상 속에서 살아남기 위한 부드러운 방어막이라는 것을 깨달았습니다. \n그 순간 나는 깨달았습니다 — 그 고슴도치들처럼, 날카로운 스타일을 가진 사람들도 자신을 지키기 위한 보호막으로 그것을 사용한다는 것을. \nPaidstyle은 이런 개인적인 ‘갑옷’을 기념하고 보호하기 위해 존재합니다.",
+    "Brand-Philosophy": "브랜드 철학",
+    "Brand-Philosophy-text": "Paidstyle은 진정성, 절제, 따뜻함의 원칙에 뿌리를 둔 향기 및 라이프스타일 미학 브랜드입니다. ‘당신의 스타일에 가치를 지불한다’는 철학을 바탕으로, 재료와 장인정신을 통해 일상의 디테일을 개인의 우아함으로 승화시킵니다."
+  },
+  "collection": {
+    "title": "컬렉션",
+    "subtitle": "현대적인 라이프스타일을 위한 엄선된 제품",
+    "Customization": "맞춤 제작",
+    "Moment": "모먼트",
+    "Signature": "시그니처",
+    "Signature-collection": "시그니처 컬렉션",
+    "Signature-collection1": "<bold>미니 시그니처 캔들</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>프래그런스 세트</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>시즈널 시그니처 캔들</bold> \nUSD $39.00",
+    "button-next": "다음",
+    "button-previous": "이전",
+    "moment-collection1": "<bold>미니 캔들</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>헤어 프래그런스 미스트</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>컴포트 세트</bold> \nUSD $21.99",
+    "moment1": "비치사이드 코코넛",
+    "moment2": "페닌슐라 네롤리",
+    "moment3": "티 플랜테이션 오스만서스",
+    "moment4": "스노우포그 아이스페어",
+    "moment5": "러블리 쏜니 크리처스",
+    "moment6": "화이트 가든 우롱",
+    "moment7": "클리프사이드 마그놀리아"
+  },
+  "contact": {
+    "title": "문의하기",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "send": "메시지 보내기",
+    "phone": "전화번호",
+    "submit": "제출",
+    "typical-clients": "주요 고객",
+    "typical-clients1": "레스토랑",
+    "typical-clients2": "서점",
+    "typical-clients3": "호텔",
+    "typical-clients4": "기업",
+    "welcome": "언제든지 문의해 주세요!"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. 모든 권리 보유.",
+    "follow": "팔로우하기",
+    "Rednote": "RedNote",
+    "address": "홍콩 산포콩 King Fuk Street 99, Kai Tak 산업빌딩 2단계 8층 D07호",
+    "pages": "페이지",
+    "wechat": "WeChat"
+  }
+}

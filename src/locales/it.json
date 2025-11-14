@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "Home",
+    "story": "Storia",
+    "collection": "Collezione",
+    "contact": "Contatti"
+  },
+  "home": {
+    "title": "Benvenuto su PaidStyle",
+    "subtitle": "Scopri la moda e lo stile di alta qualità",
+    "cta": "Esplora la collezione",
+    "marquee": "Paidstyle — un tranquillo rituale di vita.",
+    "more-product": "Altri prodotti",
+    "Brand-symbolism": "Simbolismo del marchio",
+    "Brand-symbolism-text": "Il riccio simboleggia che i suoi aculei possono essere piccoli, ma li usa comunque per proteggere la sua tranquilla perseveranza.",
+    "grid-content-text": "Le nostre candele sono realizzate con cera di soia 100% naturale, colate a mano in piccoli lotti per garantire una combustione pulita e duratura.",
+    "grid-content1": "Candela Signature Originale Paidstyle",
+    "grid-price": "USD $52.00"
+  },
+  "story": {
+    "title": "La Nostra Storia",
+    "content": "PaidStyle è nata da una passione per la moda di alta gamma e l’artigianalità di qualità. Crediamo che lo stile non riguardi solo ciò che indossi, ma come ti senti quando lo indossi.",
+    "point-of-origin": "Punto di origine",
+    "where-it-begin": "Dove\n  Tutto è\nIniziato",
+    "where-it-brgin-text": "Un tempo ho tenuto due ricci a Los Angeles. Sembravano troppo guardinghi, troppo spinosi. Così li ho liberati sulle colline di Hollywood. \nOsservandoli scomparire nella natura, ho capito che i loro aculei non erano armi, ma un guscio protettivo — una difesa gentile per sopravvivere in un mondo vasto. \nIn quel momento ho capito: proprio come quei ricci, anche le persone con uno stile deciso lo usano come protezione per restare fedeli a se stesse. \nPaidstyle esiste per celebrare e proteggere questa armatura personale attraverso i suoi prodotti.",
+    "Brand-Philosophy": "Filosofia del marchio",
+    "Brand-Philosophy-text": "Paidstyle è un marchio di profumi e lifestyle estetico basato sui principi di sincerità, moderazione e calore. Promuove la filosofia del “pagare per il proprio stile”, trasformando i dettagli quotidiani in una pratica di eleganza personale attraverso materiali e artigianalità."
+  },
+  "collection": {
+    "title": "La Nostra Collezione",
+    "subtitle": "Pezzi selezionati per uno stile di vita moderno",
+    "Customization": "Personalizzazione",
+    "Moment": "Momento",
+    "Signature": "Signature",
+    "Signature-collection": "Collezione Signature",
+    "Signature-collection1": "<bold>Mini Candela Signature</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>Set di Fragranze</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>Candela Signature Stagionale</bold> \nUSD $39.00",
+    "button-next": "Successivo",
+    "button-previous": "Precedente",
+    "moment-collection1": "<bold>Mini Candela</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>Nebbia Profumata per Capelli</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>Set Comfort</bold> \nUSD $21.99",
+    "moment1": "Cocco Marino",
+    "moment2": "Neroli della Costa",
+    "moment3": "Osmanto del Tè",
+    "moment4": "Pera di Neve",
+    "moment5": "Creature di Spine",
+    "moment6": "Giardino Bianco",
+    "moment7": "Magnolia delle Scogliere"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia messaggio",
+    "phone": "Telefono",
+    "submit": "Invia",
+    "typical-clients": "I nostri clienti tipici",
+    "typical-clients1": "Ristorante",
+    "typical-clients2": "Libreria",
+    "typical-clients3": "Hotel",
+    "typical-clients4": "Azienda",
+    "welcome": "Benvenuto, contattaci pure!"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. Tutti i diritti riservati.",
+    "follow": "Seguici",
+    "Rednote": "RedNote",
+    "address": "Sala D07, 8º piano, Fase 2, Edificio Industriale Kai Tak, 99 King Fuk Street, San Po Kong, Hong Kong.",
+    "pages": "Pagine",
+    "wechat": "WeChat"
+  }
+}

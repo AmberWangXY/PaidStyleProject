@@ -1,6 +1,8 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const pxToVw = (px) => `${(px / 1512) * 100}vw`;
+const pxToVwSm = (px) => `${(px / 832) * 100}vw`;
+const pxToVwMobile = (px) => `${(px / 395) * 100}vw`;
 // Brand Colors
 const brandColors = {
   main: "#ED7D31", // Main brand color
@@ -17,10 +19,10 @@ const theme = extendTheme({
     body: "Inter, sans-serif",
   },
   textStyles: {
-    sm: { fontSize: pxToVw(16) },
-    md: { fontSize: pxToVw(20) },
-    lg: { fontSize: pxToVw(24) },
-    xl: { fontSize: pxToVw(36) },
+    sm: { fontSize: pxToVw(16) }, //1.058vw
+    md: { fontSize: pxToVw(20) }, //1.323vw
+    lg: { fontSize: pxToVw(24) }, //1.587vw
+    xl: { fontSize: pxToVw(36) }, //2.381vw
   },
   colors: {
     brand: brandColors,
@@ -69,16 +71,13 @@ const theme = extendTheme({
             transform: "translateY(0)",
           },
         },
-        "brand-outline": {
-          border: "2px solid",
-          borderColor: "brand.main",
-          color: "brand.main",
-          bg: "transparent",
+        "moment-button": {
+          bg: "brand.light",
+          color: "brand.dark",
+          fontSize: { base: pxToVwSm(16), md: pxToVw(16) },
           _hover: {
-            bg: "brand.main",
-            color: "white",
-            transform: "translateY(-2px)",
-            boxShadow: "lg",
+            transform: "scale(1.05)",
+            transition: "all 0.2s ease",
           },
         },
         "brand-ghost": {
@@ -89,31 +88,88 @@ const theme = extendTheme({
             color: "brand.dark",
           },
         },
+        "contact-submit": {
+          color: "brand.main",
+          bg: "none",
+          fontWeight: "bold",
+          fontSize: { base: pxToVwSm(24), md: pxToVw(24) },
+        },
       },
     },
     Heading: {
       baseStyle: {
         fontFamily: "Montserrat, sans-serif",
-        fontWeight: "bold",
-        fontSize: pxToVw(36),
+        fontSize: { base: pxToVwSm(20), md: pxToVw(36) },
         lineHeight: "1.36",
+        fontWeight: { base: "Bold", md: "SemiBold" },
         color: "brand.main",
+      },
+      variants: {
+        "heading-36px": {
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: { base: pxToVwSm(20), md: pxToVw(36) },
+          lineHeight: "1.17",
+          fontWeight: { base: "black", md: "Bold" },
+          color: "brand.dark",
+        },
       },
     },
     Text: {
       baseStyle: {
         fontFamily: "Montserrat, sans-serif",
         color: "brand.Dark",
-        fontSize: pxToVw(24),
+        fontSize: { base: pxToVwSm(24), md: pxToVw(24) },
         lineHeight: "1.58",
       },
       variants: {
+        "text-collection": {
+          fontSize: { base: pxToVwSm(20), md: pxToVw(20) },
+          lineHeight: "1.1",
+        },
         "Text-footer": {
           fontFamily: "Montserrat, sans-serif",
           color: "brand.mid",
-          fontSize: pxToVw(16),
+          fontSize: { base: pxToVwMobile(14), md: pxToVw(16) },
           lineHeight: "1.25",
           fontWeight: "regular",
+        },
+        "Text-footer-heading": {
+          fontFamily: "Montserrat, sans-serif",
+          color: "brand.main",
+          fontSize: { base: pxToVwMobile(14), md: pxToVw(20) },
+
+          fontWeight: "semibold",
+        },
+        "Text-36px-heading": {
+          fontFamily: "Montserrat, sans-serif",
+          color: "brand.light",
+          fontSize: { base: pxToVwMobile(20), md: pxToVw(36) },
+          lineHeight: "1.36",
+          fontWeight: "bold",
+        },
+        "collection-heading-36px": {
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: { base: pxToVwSm(36), md: pxToVw(36) },
+          lineHeight: "1.17",
+          fontWeight: { base: "Bold", md: "black" },
+          color: "brand.dark",
+        },
+      },
+    },
+    Link: {
+      baseStyle: {
+        fontFamily: "Montserrat, sans-serif",
+      },
+      variants: {
+        "Link-footer": {
+          fontFamily: "Montserrat, sans-serif",
+          color: "brand.mid",
+          fontSize: { base: pxToVwMobile(14), md: pxToVw(16) },
+        },
+        "Link-header": {
+          fontFamily: "Montserrat, sans-serif",
+
+          fontSize: pxToVw(24),
         },
       },
     },

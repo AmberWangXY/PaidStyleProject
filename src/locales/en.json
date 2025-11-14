@@ -8,25 +8,68 @@
   "home": {
     "title": "Welcome to PaidStyle",
     "subtitle": "Discover premium fashion and style",
-    "cta": "Explore Collection"
+    "cta": "Explore Collection",
+    "marquee": "Paidstyle — a quiet ritual of living.",
+    "more-product": "More Products",
+    "Brand-symbolism": "Brand symbolism",
+    "Brand-symbolism-text": "The hedgehog symbolizes：A hedgehog’s spines may be small, yet it still uses them to guard its quiet persistence.",
+    "grid-content1": "Paidstyle Orignal Signature Candle",
+    "grid-content-text": "Our candles are made from 100% natural soy wax, hand-poured in small batches to ensure a clean and long-lasting burn.",
+    "grid-price": "USD $52.00"
   },
   "story": {
     "title": "Our Story",
-    "content": "PaidStyle was born from a passion for premium fashion and quality craftsmanship. We believe that style is not just about what you wear, but how you feel when you wear it."
+    "content": "PaidStyle was born from a passion for premium fashion and quality craftsmanship. We believe that style is not just about what you wear, but how you feel when you wear it.",
+    "point-of-origin": "Point of Origin",
+    "where-it-begin": "Where\n\u00A0\u00A0\u00A0It All\nBegan",
+    "where-it-brgin-text": "I once kept two hedgehogs in LA. They seemed too guarded, too sharp. So, I released them into the Hollywood hills. \nWatching them disappear into the wild, I realized their spikes weren't a weapon—they were a protective shell, a gentle defense for surviving in a vast world. \nThat's when it hit me: like those hedgehogs, people with sharp style use it as protection to stay true to themselves. \nPaidstyle exists to celebrate and safeguard this personal armor through our products.",
+    "Brand-Philosophy": "Brand Philosophy",
+    "Brand-Philosophy-text": "Paidstyle is a fragrance and lifestyle aesthetics brand rooted in the principles of sincerity, moderation, and warmth. It champions the philosophy of \"paying for your style,\" transforming everyday details into a practice of personal elegance through materials and artisanal craftsmanship."
   },
   "collection": {
     "title": "Our Collection",
-    "subtitle": "Curated pieces for the modern lifestyle"
+    "subtitle": "Curated pieces for the modern lifestyle",
+    "Signature": "Signature",
+    "Moment": "Moment",
+    "Customization": "Customization",
+    "Signature-collection": "Signature Collection",
+    "Signature-collection1": "<bold>Mini Signature Candle</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>Fragrance Set</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>Seasonal Signature Candle</bold> \nUSD $39.00",
+    "moment1": "Beachside Coconuts",
+    "moment2": "Peninsula Neroli",
+    "moment3": "Tea Plantation Osmanthus",
+    "moment4": "Snowfog Ice Pear",
+    "moment5": "Lovely Thorny Creatures",
+    "moment6": "White Garden Oolong",
+    "moment7": "Clliffside Magnolia",
+    "moment-collection1": "<bold>Mini Candle</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>Hair Fragrance Mist</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>Comfort Set</bold> \nUSD $21.99",
+    "button-previous": "Previous",
+    "button-next": "Next"
   },
   "contact": {
     "title": "Get in Touch",
     "name": "Name",
     "email": "Email",
+    "phone": "Phone",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "submit": "Submit",
+    "welcome": "Welcome to get in touch!",
+    "typical-clients": "Our Typical Clients",
+    "typical-clients1": "Restaurant",
+    "typical-clients2": "Book Store",
+    "typical-clients3": "Hotel",
+    "typical-clients4": "Enterprise"
   },
   "footer": {
     "copyright": "© 2024 PaidStyle. All rights reserved.",
-    "follow": "Follow Us"
+    "follow": "Follow Us",
+    "address": "Room D07, 8/F, Phase 2, Kai Tak Industrial Building, 99 King Fuk Street, San Po Kong, Hong Kong.",
+    "wechat": "WeChat",
+    "Rednote": "RedNote",
+    "pages": "Pages"
   }
 }

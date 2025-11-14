@@ -84,11 +84,11 @@ const ContactPage = () => {
     <Box bg="brand.light" color="brand.dark">
       {/* 顶部背景图 */}
       <Image
-        w="100vw"
         src={brandImage}
-        bgSize="cover"
-        bgPosition="center"
-        bgRepeat="no-repeat"
+        w="100vw"
+        h={{ base: "75vw", md: "auto" }} // ✅ 小屏 75vw，高度固定
+        objectFit="cover" // ✅ 保持原比例，裁剪
+        objectPosition="center" // ✅ 裁剪图片的最中间部分
       />
 
       {/* 主体部分 */}
@@ -113,14 +113,7 @@ const ContactPage = () => {
 
           {/* 右侧表单 */}
           <Box flex="1" textAlign="left">
-            <Heading
-              mb="6.6vw"
-              fontSize="2.38vw"
-              fontWeight="bold"
-              color="brand.main"
-            >
-              Welcome to get in touch!
-            </Heading>
+            <Heading mb="6.6vw">{t("contact.welcome")}</Heading>
 
             <VStack
               as="form"
@@ -135,7 +128,7 @@ const ContactPage = () => {
                 borderColor="brand.dark"
               >
                 <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  Name
+                  {t("contact.name")}
                 </Text>
                 <Input
                   variant="unstyled"
@@ -154,7 +147,7 @@ const ContactPage = () => {
                 borderColor="brand.dark"
               >
                 <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  Email
+                  {t("contact.email")}
                 </Text>
                 <Input
                   variant="unstyled"
@@ -173,7 +166,7 @@ const ContactPage = () => {
                 borderColor="brand.dark"
               >
                 <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  Phone
+                  {t("contact.phone")}
                 </Text>
                 <Input
                   variant="unstyled"
@@ -193,7 +186,7 @@ const ContactPage = () => {
                 borderColor="brand.dark"
               >
                 <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  Message
+                  {t("contact.message")}
                 </Text>
                 <Input
                   variant="unstyled"
@@ -209,10 +202,7 @@ const ContactPage = () => {
               <Button
                 type="submit"
                 mt="3.3vw"
-                bg="none"
-                color="brand.main"
-                fontWeight="bold"
-                fontSize="1.58vw"
+                variant={"contact-submit"}
                 textAlign="left"
                 borderRadius="none"
                 w="fit-content"
@@ -225,7 +215,7 @@ const ContactPage = () => {
                   bg: "none",
                 }}
               >
-                Submit
+                {t("contact.submit")}
               </Button>
             </VStack>
           </Box>
@@ -235,14 +225,8 @@ const ContactPage = () => {
       {/* 客户展示部分 */}
       <Box py="6.5vw">
         <ContentContainer>
-          <Heading
-            fontSize="2.12vw"
-            mb="3vw"
-            textAlign="left"
-            fontWeight="bold"
-            color="brand.main"
-          >
-            Our Typical Clients
+          <Heading mb="3vw" textAlign="left">
+            {t("contact.typical-clients")}
           </Heading>
 
           <SimpleGrid columns={[1, 2, 4]} spacing="15px">
@@ -254,7 +238,14 @@ const ContactPage = () => {
                   lineHeight="1.5"
                   textAlign="center"
                 >
-                  {["Restaurant", "Book Store", "Hotel", "Enterprise"][index]}
+                  {
+                    [
+                      t("contact.typical-clients1"),
+                      t("contact.typical-clients2"),
+                      t("contact.typical-clients3"),
+                      t("contact.typical-clients4"),
+                    ][index]
+                  }
                 </Text>
               </VStack>
             ))}

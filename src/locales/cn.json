@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "主页",
+    "story": "故事",
+    "collection": "系列",
+    "contact": "联系我们"
+  },
+  "home": {
+    "title": "欢迎来到 PaidStyle",
+    "subtitle": "探索高品质时尚与风格",
+    "cta": "探索系列",
+    "marquee": "Paidstyle —— 一种安静的生活仪式。",
+    "more-product": "更多产品",
+    "Brand-symbolism": "品牌象征",
+    "Brand-symbolism-text": "刺猬象征着：它的刺可能很小，但依然用它们来守护自己的安静坚持。",
+    "grid-content-text": "我们的香薰蜡烛采用 100% 天然大豆蜡制作，小批量手工浇注，确保燃烧更干净、更持久。",
+    "grid-content1": "Paidstyle 原创标志性蜡烛",
+    "grid-price": "USD $52.00"
+  },
+  "story": {
+    "title": "品牌故事",
+    "content": "PaidStyle 诞生于对高端时尚与精湛工艺的热爱。我们相信，风格不仅关乎你穿什么，更关乎你穿上它时的感受。",
+    "point-of-origin": "故事的起点",
+    "where-it-begin": "一切\n  开始的\n地方",
+    "where-it-brgin-text": "我曾在洛杉矶养过两只刺猬。它们看起来总是过于防备、过于尖锐。所以，我将它们放生在好莱坞山。 \n看着它们消失在野林中，我意识到它们的刺并不是武器，而是一层保护壳——一种温柔的防御，让它们在广阔的世界中得以生存。 \n那一刻我突然明白：就像这些刺猬一样，拥有锋利风格的人们，也是在用风格作为保护，以保持真实的自己。 \nPaidstyle 的存在，是为了通过产品去庆祝并守护这份个人的“盔甲”。",
+    "Brand-Philosophy": "品牌理念",
+    "Brand-Philosophy-text": "Paidstyle 是一家香氛与生活美学品牌，基于真诚、克制与温暖的原则。它倡导“为你的风格付出”这一理念，通过材质与匠心工艺，将日常细节转化为个人优雅的实践。"
+  },
+  "collection": {
+    "title": "我们的系列",
+    "subtitle": "为现代生活方式精心甄选的作品",
+    "Customization": "定制",
+    "Moment": "时刻",
+    "Signature": "经典",
+    "Signature-collection": "标志系列",
+    "Signature-collection1": "<bold>迷你标志蜡烛</bold> 20g \nUSD $12.00",
+    "Signature-collection2": "<bold>香氛礼盒</bold> 30ml \nUSD $42.00",
+    "Signature-collection3": "<bold>季节限定标志蜡烛</bold> \nUSD $39.00",
+    "button-next": "下一页",
+    "button-previous": "上一页",
+    "moment-collection1": "<bold>迷你蜡烛</bold> 20g \nUSD $8.00",
+    "moment-collection2": "<bold>发香喷雾</bold> 100ml \nUSD $16.00",
+    "moment-collection3": "<bold>舒适礼盒</bold> \nUSD $21.99",
+    "moment1": "海岸椰香",
+    "moment2": "半岛橙花",
+    "moment3": "茶园桂花",
+    "moment4": "雪雾冰梨",
+    "moment5": "可爱的带刺生物",
+    "moment6": "白园乌龙",
+    "moment7": "悬崖玉兰"
+  },
+  "contact": {
+    "title": "联系我们",
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "留言",
+    "send": "发送信息",
+    "phone": "电话",
+    "submit": "提交",
+    "typical-clients": "我们的典型客户",
+    "typical-clients1": "餐厅",
+    "typical-clients2": "书店",
+    "typical-clients3": "酒店",
+    "typical-clients4": "企业",
+    "welcome": "欢迎与我们联系！"
+  },
+  "footer": {
+    "copyright": "© 2024 PaidStyle. 版权所有。",
+    "follow": "关注我们",
+    "Rednote": "小红书",
+    "address": "香港新蒲岗景福街 99 号启德工业大厦二期 8 楼 D07 室。",
+    "pages": "页面",
+    "wechat": "微信"
+  }
+}

@@ -7,26 +7,69 @@
   },
   "home": {
     "title": "Bienvenue chez PaidStyle",
-    "subtitle": "Découvrez la mode premium et le style",
-    "cta": "Explorer la Collection"
+    "subtitle": "Découvrez la mode et le style haut de gamme",
+    "cta": "Explorer la collection",
+    "marquee": "Paidstyle — un rituel calme de vie.",
+    "more-product": "Plus de produits",
+    "Brand-symbolism": "Symbolisme de la marque",
+    "Brand-symbolism-text": "Le hérisson symbolise que ses piquants peuvent être petits, mais il les utilise pour protéger sa tranquille persévérance.",
+    "grid-content-text": "Nos bougies sont fabriquées à partir de cire de soja 100 % naturelle, coulées à la main en petits lots pour garantir une combustion propre et durable.",
+    "grid-content1": "Bougie Signature Originale Paidstyle",
+    "grid-price": "USD $52.00"
   },
   "story": {
     "title": "Notre Histoire",
-    "content": "PaidStyle est né d'une passion pour la mode premium et l'artisanat de qualité. Nous croyons que le style ne concerne pas seulement ce que vous portez, mais comment vous vous sentez quand vous le portez."
+    "content": "PaidStyle est né d’une passion pour la mode haut de gamme et l’artisanat de qualité. Nous croyons que le style ne se limite pas à ce que vous portez, mais à la façon dont vous vous sentez en le portant.",
+    "point-of-origin": "Point d’origine",
+    "where-it-begin": "Là où\n Tout a\nCommencé",
+    "where-it-brgin-text": "J’ai autrefois élevé deux hérissons à Los Angeles. Ils semblaient trop sur la défensive, trop piquants. Alors, je les ai relâchés dans les collines d’Hollywood. \nEn les voyant disparaître dans la nature, j’ai compris que leurs piquants n’étaient pas des armes, mais une carapace protectrice — une défense douce pour survivre dans un monde vaste. \nC’est alors que j’ai compris : comme ces hérissons, les personnes au style affirmé l’utilisent comme protection pour rester fidèles à elles-mêmes. \nPaidstyle existe pour célébrer et protéger cette armure personnelle à travers ses produits.",
+    "Brand-Philosophy": "Philosophie de la marque",
+    "Brand-Philosophy-text": "Paidstyle est une marque de parfums et d’esthétique de vie fondée sur la sincérité, la modération et la chaleur. Elle défend la philosophie de « payer pour son style », transformant les détails du quotidien en une pratique d’élégance personnelle grâce aux matériaux et au savoir-faire artisanal."
   },
   "collection": {
     "title": "Notre Collection",
-    "subtitle": "Pièces sélectionnées pour le mode de vie moderne"
+    "subtitle": "Pièces sélectionnées pour le mode de vie moderne",
+    "Customization": "Personnalisation",
+    "Moment": "Moment",
+    "Signature": "Signature",
+    "Signature-collection": "Collection Signature",
+    "Signature-collection1": "<bold>Mini Bougie Signature</bold> 20 g \nUSD $12.00",
+    "Signature-collection2": "<bold>Coffret de Parfums</bold> 30 ml \nUSD $42.00",
+    "Signature-collection3": "<bold>Bougie Signature Saisonnière</bold> \nUSD $39.00",
+    "button-next": "Suivant",
+    "button-previous": "Précédent",
+    "moment-collection1": "<bold>Mini Bougie</bold> 20 g \nUSD $8.00",
+    "moment-collection2": "<bold>Brume Parfumée pour Cheveux</bold> 100 ml \nUSD $16.00",
+    "moment-collection3": "<bold>Ensemble Confort</bold> \nUSD $21.99",
+    "moment1": "Coco Marin",
+    "moment2": "Néroli de la Côte",
+    "moment3": "Osmanthe du Thé",
+    "moment4": "Poire de Neige",
+    "moment5": "Créatures Épineuses",
+    "moment6": "Jardin Blanc",
+    "moment7": "Magnolia des Falaises"
   },
   "contact": {
     "title": "Contactez-nous",
     "name": "Nom",
-    "email": "Email",
+    "email": "E-mail",
     "message": "Message",
-    "send": "Envoyer le Message"
+    "send": "Envoyer le message",
+    "phone": "Téléphone",
+    "submit": "Soumettre",
+    "typical-clients": "Nos clients types",
+    "typical-clients1": "Restaurant",
+    "typical-clients2": "Librairie",
+    "typical-clients3": "Hôtel",
+    "typical-clients4": "Entreprise",
+    "welcome": "Bienvenue, contactez-nous !"
   },
   "footer": {
     "copyright": "© 2024 PaidStyle. Tous droits réservés.",
-    "follow": "Suivez-nous"
+    "follow": "Suivez-nous",
+    "Rednote": "RedNote",
+    "address": "Salle D07, 8ᵉ étage, Phase 2, Bâtiment Industriel Kai Tak, 99 King Fuk Street, San Po Kong, Hong Kong.",
+    "pages": "Pages",
+    "wechat": "WeChat"
   }
 }

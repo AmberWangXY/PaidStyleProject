@@ -1,22 +1,21 @@
 // src/components/Layout/ContentGrid.js
-import { Grid, GridItem, Box, Image, Text, useTheme } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
-import { Link as ChakraLink } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Image, Text, Flex } from "@chakra-ui/react";
+
+import { useTranslation } from "react-i18next";
 import { ContentContainer } from "../Layout/ContentContainer";
 import brandImage1 from "../../assets/homepageIMG/candle00.jpg";
 import brandImage2 from "../../assets/homepageIMG/candle02.jpg";
 import brandImage3 from "../../assets/homepageIMG/candle11.jpg";
 import brandImage4 from "../../assets/homepageIMG/candle12.jpg";
 export const ContentGrid = () => {
-  const theme = useTheme();
-
+  const { t } = useTranslation();
   const images = [brandImage1, brandImage2, brandImage3, brandImage4];
 
   return (
     <ContentContainer>
       <Grid
         templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }}
-        gap="1.58vw"
+        gap="0.99vw"
       >
         {/* 第1行第1列：图片 */}
         <GridItem>
@@ -39,17 +38,29 @@ export const ContentGrid = () => {
         <GridItem>
           <Box
             bg="brand.main"
-            color="white"
-            fontWeight="bold"
-            fontSize={"xl"}
-            position="relative"
             w="100%"
-            aspectRatio={1 / 1} // ✅ 维持正方形
+            p="2vw"
+            aspectRatio={1 / 1}
             display="flex"
-            alignItems="center"
-            justifyContent="center"
+            flexDirection="column"
           >
-            Brand Section
+            <Text variant={"Text-36px-heading"} flex="1">
+              {t("home.grid-content1")}
+            </Text>
+            <Flex
+              w="100%"
+              justify="space-between"
+              align="center"
+              mt="auto"
+              pt="1vw"
+            >
+              <Text textAlign="left" color={"brand.light"}>
+                150g
+              </Text>
+              <Text textAlign="right" fontWeight={"bold"} color={"brand.light"}>
+                {t("home.grid-price")}
+              </Text>
+            </Flex>
           </Box>
         </GridItem>
 
@@ -72,17 +83,15 @@ export const ContentGrid = () => {
         <GridItem>
           <Box
             bg="brand.main"
-            color="brand.light"
-            fontWeight="medium"
-            fontSize={"lg"}
             position="relative"
             w="100%"
+            p="2vw"
             aspectRatio={1 / 1}
             display="flex"
-            alignItems="center"
-            justifyContent="center"
           >
-            Brand Section
+            <Text color={"brand.light"} lineHeight={"1.2"}>
+              {t("home.grid-content-text")}
+            </Text>
           </Box>
         </GridItem>
 

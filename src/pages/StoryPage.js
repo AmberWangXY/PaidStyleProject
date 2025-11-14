@@ -14,11 +14,11 @@ const StoryPage = () => {
       {/* Hero Section */}
       <Box position="relative" w="100vw">
         <Image
-          w="100vw"
           src={brandImage}
+          w="100vw"
+          h={{ base: "75vw", md: "auto" }}
           objectFit="cover"
           objectPosition="center"
-          alt="Point of Origin"
         />
 
         {/* 文字覆盖在图片中间 */}
@@ -29,10 +29,10 @@ const StoryPage = () => {
           transform="translate(-50%, -50%)"
           color="brand.main"
           fontWeight="black"
-          fontSize="xl"
+          fontSize={{ base: "4.32vw", md: "2.38vw" }}
           textAlign="center"
         >
-          Point of Origin
+          {t("story.point-of-origin")}
         </Box>
       </Box>
 
@@ -41,29 +41,30 @@ const StoryPage = () => {
           <Center pb="4.5vw">
             <Image src={iconSequence} w={"32vw"} />
           </Center>
-          <Flex w="100%" align="flex-start">
+          <Flex
+            w="100%"
+            direction={{ base: "column", md: "row" }}
+            align={{ base: "center", md: "flex-start" }}
+            gap={{ base: "4vw", md: "0" }}
+          >
             {/* 左侧标题 */}
-            <Box flex="1" maxW="28%">
-              <Text
-                fontWeight="bold"
-                fontSize="4.63vw" //70px
-                lineHeight="1.1"
-                color="brand.main"
-                whiteSpace="pre-line" // ✅ 保留换行
+            <Box flex="1" maxW={{ base: "100%", md: "28%" }}>
+              <Heading
+                whiteSpace="pre-line"
+                fontWeight={"bold"}
+                fontSize={{ md: "4.63vw", base: "7.8vw" }} //70px
+                lineHeight={{ md: "1.1" }}
               >
-                {`Where\n\u00A0\u00A0\u00A0It All\nBegan`}
-              </Text>
+                {t("story.where-it-begin")}
+              </Heading>
             </Box>
 
             {/* 右侧正文 */}
-            <Box flex="2" maxW="72%">
+            <Box flex="2" maxW={{ base: "100%", md: "72%" }}>
               <Text
                 whiteSpace="pre-line" // ✅ 支持多段落间的换行
               >
-                {`I once kept two hedgehogs in LA. They seemed too guarded, too sharp. So, I released them into the Hollywood hills.        
-Watching them disappear into the wild, I realized their spikes weren't a weapon—they were a protective shell, a gentle defense for surviving in a vast world.        
-That's when it hit me: like those hedgehogs, people with sharp style use it as protection to stay true to themselves.         
-Paidstyle exists to celebrate and safeguard this personal armor through our products.`}
+                {t("story.where-it-brgin-text")}
               </Text>
             </Box>
           </Flex>
@@ -75,18 +76,24 @@ Paidstyle exists to celebrate and safeguard this personal armor through our prod
       {/* CTA Section */}
       <Box bg="brand.mid" py="6.5vw">
         <ContentContainer>
-          <Flex w="58.5vw" align="flex-start" gap={"8vw"}>
+          <Flex
+            w={{ base: "100%", md: "58.5vw" }}
+            align={"center"}
+            direction={{ base: "column", md: "row" }}
+            gap={{ base: "6vw", md: "8vw" }}
+          >
             {/* 左侧标题 */}
-            <Box w="34vw" py={8}>
-              <Heading mb={4}>Brand symbolism</Heading>
-              <Text>
-                The hedgehog symbolizes：A hedgehog’s spines may be small, yet
-                it still uses them to guard its quiet persistence.
-              </Text>
+            <Box
+              w={{ base: "100%", md: "34vw" }}
+              py={{ base: 0, md: 8 }}
+              gap={{ base: "4vw", md: "0" }}
+            >
+              <Heading mb={4}>{t("home.Brand-symbolism")}</Heading>
+              <Text>{t("home.Brand-symbolism-text")}</Text>
             </Box>
 
             {/* 右侧正文 */}
-            <Box w={"17vw"}>
+            <Box w={{ base: "25vw", md: "17vw" }}>
               <Image src={iconImage} alt="PaidStyle Logo Icon" w="100%" />
             </Box>
           </Flex>
@@ -94,12 +101,16 @@ Paidstyle exists to celebrate and safeguard this personal armor through our prod
       </Box>
       <Box py="6.5vw">
         <ContentContainer>
-          <Flex justifyContent="flex-end" w="full">
-            <Box py={8} w="47vw">
-              <Heading mb={4}>Brand Philosophy</Heading>
-              <Text>
-                {`Paidstyle is a fragrance and lifestyle aesthetics brand rooted in the principles of sincerity, moderation, and warmth. It champions the philosophy of "paying for your style," transforming everyday details into a practice of personal elegance through materials and artisanal craftsmanship.`}
-              </Text>
+          <Flex
+            w="100%"
+            direction={{ base: "column", md: "row" }}
+            align={{ base: "center", md: "flex-end" }}
+            justifyContent={{ md: "flex-end" }}
+            gap={{ base: "4vw", md: "0" }}
+          >
+            <Box py={{ base: 0, md: 8 }} w={{ base: "100%", md: "47vw" }}>
+              <Heading mb={4}>{t("story.Brand-Philosophy")}</Heading>
+              <Text>{t("story.Brand-Philosophy-text")}</Text>
             </Box>
           </Flex>
         </ContentContainer>
