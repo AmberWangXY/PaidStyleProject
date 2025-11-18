@@ -1,6 +1,6 @@
 # PaidStyle Project
 
-A modern, responsive frontend website built with React and Chakra UI, featuring internationalization support.
+A modern, responsive frontend website built with React and Chakra UI, featuring internationalization support. The website can be prereviewed at https://amberwangxy.github.io/PaidStyleProject/
 
 ## Features
 
