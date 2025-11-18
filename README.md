@@ -95,7 +95,10 @@ npm start
 - English (default)
 - Spanish
 - French
-- Easy language switching in header
+- Chinese
+- Japanese
+- Korean
+- Italian
 
 ## Customization
 
