@@ -139,12 +139,19 @@ const HeaderMobile = () => {
             </Button>
 
             {/* 中间 Logo */}
-            <Image
-              src={isCollectionPage || scrolled ? logo2 : logo}
-              alt="Logo"
-              w="40vw" // ✅ 155.77 / 394
-              mx="auto"
-            />
+            <ChakraLink
+              as={RouterLink}
+              to="/"
+              _hover={{ textDecoration: "none" }}
+            >
+              <Image
+                src={isCollectionPage || scrolled ? logo2 : logo}
+                alt="PaidStyle"
+                w="40vw" // ✅ 155.77 / 394
+                mx="auto"
+                cursor="pointer"
+              />
+            </ChakraLink>
 
             {/* 右边汉堡按钮 */}
             <Button

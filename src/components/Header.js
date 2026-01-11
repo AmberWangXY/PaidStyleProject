@@ -114,11 +114,18 @@ const Header = () => {
               alignItems={"center"}
               justifyContent={"space-between"}
             >
-              <Image
-                src={isCollectionPage || scrolled ? logo2 : logo}
-                alt="PaidStyle"
-                w="11vw"
-              />
+              <ChakraLink
+                as={RouterLink}
+                to="/"
+                _hover={{ textDecoration: "none" }}
+              >
+                <Image
+                  src={isCollectionPage || scrolled ? logo2 : logo}
+                  alt="PaidStyle"
+                  w="11vw"
+                  cursor="pointer"
+                />
+              </ChakraLink>
 
               <HStack spacing={10} alignItems={"center"}>
                 <HStack

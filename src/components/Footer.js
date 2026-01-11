@@ -128,7 +128,13 @@ const Footer = () => {
           >
             {/* 第一栏：Logo */}
             <VStack align="flex-start" spacing={4}>
-              <Image src={logo} alt="Paidstyle Logo" w="11vw" />
+              <ChakraLink
+                as={RouterLink}
+                to="/"
+                _hover={{ textDecoration: "none" }}
+              >
+                <Image src={logo} alt="PaidStyle" w="11vw" cursor="pointer" />
+              </ChakraLink>
             </VStack>
 
             <NavigationBar />
@@ -147,8 +153,13 @@ const Footer = () => {
           >
             {/* 第一栏：Logo */}
 
-            <Image src={logo} alt="Paidstyle Logo" w="40vw" />
-
+            <ChakraLink
+              as={RouterLink}
+              to="/"
+              _hover={{ textDecoration: "none" }}
+            >
+              <Image src={logo} alt="PaidStyle" w="40vw" cursor="pointer" />
+            </ChakraLink>
             <Flex
               justify="space-between"
               align="flex-start"
