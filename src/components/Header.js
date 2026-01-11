@@ -11,7 +11,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ContentContainer } from "../components/Layout/ContentContainer";
 import logo from "../assets/Logo.svg";
-import logo2 from "../assets/LogoDark.png";
+import logo2 from "../assets/LogoDark.svg";
 import LanguageSelector from "./HomePage/LanguageSelector";
 import HeaderMobile from "./HomePage/HeaderMobile";
 
@@ -117,7 +117,7 @@ const Header = () => {
               <Image
                 src={isCollectionPage || scrolled ? logo2 : logo}
                 alt="PaidStyle"
-                w="10.85vw"
+                w="11vw"
               />
 
               <HStack spacing={10} alignItems={"center"}>

@@ -15,7 +15,7 @@ import { BookA, X, Menu as MenuIcon } from "lucide-react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/Logo.svg";
-import logo2 from "../../assets/LogoDark.png";
+import logo2 from "../../assets/LogoDark.svg";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { ContentContainer } from "../../components/Layout/ContentContainer";
 const HeaderMobile = () => {
@@ -142,7 +142,7 @@ const HeaderMobile = () => {
             <Image
               src={isCollectionPage || scrolled ? logo2 : logo}
               alt="Logo"
-              w="39.5vw" // ✅ 155.77 / 394
+              w="40vw" // ✅ 155.77 / 394
               mx="auto"
             />
 

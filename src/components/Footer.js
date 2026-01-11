@@ -18,7 +18,6 @@ import { ContentContainer } from "./Layout/ContentContainer";
 import qrcode1 from "../assets/homepageIMG/QR-Wechat.png";
 
 import logo from "../assets/Logo.svg";
-import { QrCode } from "lucide-react";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
@@ -129,7 +128,7 @@ const Footer = () => {
           >
             {/* 第一栏：Logo */}
             <VStack align="flex-start" spacing={4}>
-              <Image src={logo} alt="Paidstyle Logo" w="10.8vw" />
+              <Image src={logo} alt="Paidstyle Logo" w="11vw" />
             </VStack>
 
             <NavigationBar />
