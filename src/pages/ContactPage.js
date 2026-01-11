@@ -85,40 +85,48 @@ const ContactPage = () => {
       {/* 顶部背景图 */}
       <Image
         src={brandImage}
-        w="100vw"
-        h={{ base: "75vw", md: "auto" }} // ✅ 小屏 75vw，高度固定
-        objectFit="cover" // ✅ 保持原比例，裁剪
-        objectPosition="center" // ✅ 裁剪图片的最中间部分
+        w={{ base: "auto", md: "100vw" }}
+        h={{ base: "133vw", md: "auto" }}
+        objectFit="cover"
+        objectPosition="center"
       />
 
       {/* 主体部分 */}
-      <ContentContainer py="6.5vw">
+      <ContentContainer py={{ base: "10.17vw", md: "6.15vw" }}>
         <Flex
           justify="space-between"
           align="flex-start"
           gap="6vw"
-          flexWrap={{ base: "wrap", md: "nowrap" }}
+          flexWrap="nowrap"
+          direction={{ base: "column", md: "row" }} // ✅ 小屏竖排，大屏横排
         >
-          {/* 左侧图片 */}
-          <Box flex="1" display="flex" justifyContent="flex-start">
+          {/* 图片：小屏在最上面居中，大屏在左侧 */}
+          <Box
+            flex="1"
+            display="flex"
+            justifyContent={{ base: "center", md: "flex-start" }}
+            w="100%"
+          >
             <Image
               src={leftImage}
               alt="Contact illustration"
               w="100%"
-              maxW="15.6vw"
+              maxW={{ base: "22.4vw", md: "15.6vw" }}
               borderRadius="lg"
               objectFit="cover"
             />
           </Box>
 
-          {/* 右侧表单 */}
-          <Box flex="1" textAlign="left">
-            <Heading mb="6.6vw">{t("contact.welcome")}</Heading>
+          {/* 右侧：welcome + 表单；小屏整体居中，大屏左对齐 */}
+          <Box flex="1" textAlign={{ base: "center", md: "left" }} w="100%">
+            <Text variant={"heading-main"} mb={{ base: "10vw", md: "6.6vw" }}>
+              {t("contact.welcome")}
+            </Text>
 
             <VStack
               as="form"
               align="stretch"
-              spacing="1.9vw"
+              spacing={{ base: "8.65vw", md: "1.9vw" }}
               onSubmit={handleSubmit}
             >
               {/* Name */}
@@ -127,16 +135,13 @@ const ContactPage = () => {
                 borderBottom="1px solid"
                 borderColor="brand.dark"
               >
-                <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  {t("contact.name")}
-                </Text>
                 <Input
-                  variant="unstyled"
+                  variant="input-contact"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  focusBorderColor="none"
                   flex="1"
+                  placeholder={t("contact.name")} // ✅ 改成 placeholder
                 />
               </Flex>
 
@@ -146,16 +151,13 @@ const ContactPage = () => {
                 borderBottom="1px solid"
                 borderColor="brand.dark"
               >
-                <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  {t("contact.email")}
-                </Text>
                 <Input
-                  variant="unstyled"
+                  variant="input-contact"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  focusBorderColor="none"
                   flex="1"
+                  placeholder={t("contact.email")}
                 />
               </Flex>
 
@@ -165,52 +167,44 @@ const ContactPage = () => {
                 borderBottom="1px solid"
                 borderColor="brand.dark"
               >
-                <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  {t("contact.phone")}
-                </Text>
                 <Input
-                  variant="unstyled"
+                  variant="input-contact"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  focusBorderColor="none"
                   flex="1"
+                  placeholder={t("contact.phone")}
                 />
               </Flex>
 
               {/* Message */}
-
               <Flex
                 align="center"
                 borderBottom="1px solid"
                 borderColor="brand.dark"
               >
-                <Text fontWeight="medium" w="8vw" whiteSpace="nowrap">
-                  {t("contact.message")}
-                </Text>
                 <Input
-                  variant="unstyled"
+                  variant="input-contact"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  focusBorderColor="none"
                   flex="1"
+                  placeholder={t("contact.message")}
                 />
               </Flex>
 
               {/* Submit */}
               <Button
                 type="submit"
-                mt="3.3vw"
-                variant={"contact-submit"}
-                textAlign="left"
+                mt={{ base: "4vw", md: "3.3vw" }}
+                variant="contact-submit"
                 borderRadius="none"
                 w="fit-content"
                 px={0}
                 h="auto"
                 isLoading={isSubmitting}
                 _hover={{
-                  transform: "translateY(-2px)", // ✅ 轻微上浮
+                  transform: "translateY(-2px)",
                   transition: "all 0.2s ease",
                   bg: "none",
                 }}
@@ -223,21 +217,23 @@ const ContactPage = () => {
       </ContentContainer>
 
       {/* 客户展示部分 */}
-      <Box py="6.5vw">
-        <ContentContainer>
-          <Heading mb="3vw" textAlign="left">
+      <Box py={{ base: "10.17vw", md: "6.15vw" }}>
+        <ContentContainer pb={{ base: "10.17vw", md: "0" }}>
+          <Text
+            variant={"heading-main"}
+            mb={{ base: "10vw", md: "3vw" }}
+            textAlign={{ base: "center", md: "left" }}
+          >
             {t("contact.typical-clients")}
-          </Heading>
-
-          <SimpleGrid columns={[1, 2, 4]} spacing="15px">
+          </Text>
+          <SimpleGrid
+            columns={{ base: 2, md: 4 }}
+            spacing={{ base: "2vw", md: "1vw" }}
+          >
             {[client1, client2, client3, client4].map((img, index) => (
-              <VStack key={index} spacing="16px">
+              <VStack key={index} spacing={{ base: "3vw", md: "1vw" }}>
                 <Image src={img} alt={`Client ${index + 1}`} w="255px" />
-                <Text
-                  fontFamily="Montserrat, sans-serif"
-                  lineHeight="1.5"
-                  textAlign="center"
-                >
+                <Text variant={"contact-dark"} w="full">
                   {
                     [
                       t("contact.typical-clients1"),

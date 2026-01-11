@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Flex,
@@ -17,12 +17,37 @@ import HeaderMobile from "./HomePage/HeaderMobile";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
 
+  // 你想要的阈值（vw）
+  const THRESHOLD_VW = 43;
+  useEffect(() => {
+    const vwToPx = (vw) => (window.innerWidth * vw) / 100;
+
+    const onScroll = () => {
+      const thresholdPx = vwToPx(THRESHOLD_VW);
+      setScrolled(window.scrollY > thresholdPx);
+    };
+
+    onScroll(); // 初始化
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    // 如果窗口大小变化（vw 对应的 px 会变），需要重新计算
+    const onResize = () => onScroll();
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
   const location = useLocation();
   const isCollectionPage = location.pathname.startsWith("/collection");
+
   const NavLink = ({ to, collectionP, children }) => {
     const isActive = location.pathname === to;
-    const inactiveColor = isCollectionPage ? "brand.dark" : "brand.light";
+    const inactiveColor =
+      isCollectionPage || scrolled ? "brand.dark" : "brand.light";
 
     return (
       <ChakraLink
@@ -75,10 +100,12 @@ const Header = () => {
           as="header"
           position="fixed"
           pt="3.5vw"
+          pb={isCollectionPage ? { md: "7vw" } : "3.5vw"}
           left="0"
           w="100%"
           zIndex="10"
-          bg="transparent"
+          bg={isCollectionPage || scrolled ? "brand.mid" : "transparent"}
+          //transition="background-color 0.25s ease"
           border="none"
         >
           <ContentContainer>
@@ -88,7 +115,7 @@ const Header = () => {
               justifyContent={"space-between"}
             >
               <Image
-                src={isCollectionPage ? logo2 : logo}
+                src={isCollectionPage || scrolled ? logo2 : logo}
                 alt="PaidStyle"
                 w="10.85vw"
               />
@@ -130,7 +157,7 @@ const Header = () => {
                         <SubLink
                           to="/collection/customization"
                           label={t("collection.Customization")}
-                          visibility
+                          //visibility
                         />
                       </VStack>
                     )}
@@ -138,7 +165,7 @@ const Header = () => {
                   <NavLink to="/contact">{t("navigation.contact")}</NavLink>
                 </HStack>
 
-                <LanguageSelector />
+                <LanguageSelector scrolled={scrolled} />
               </HStack>
             </Flex>
           </ContentContainer>

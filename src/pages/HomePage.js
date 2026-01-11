@@ -17,81 +17,76 @@ import iconImage from "../assets/homepageIMG/logoIcon.svg";
 import iconSequence from "../assets/homepageIMG/IconBySequence.svg";
 import { ContentContainer } from "../components/Layout/ContentContainer";
 import { ContentGrid } from "../components/HomePage/ContentGrid";
+import { HeroMarquee } from "../components/HomePage/marquee";
 
 const HomePage = () => {
   const { t } = useTranslation();
-  const HeroMarquee = () => {
-    return (
-      <Marquee
-        speed={80}
-        gradient={false}
-        pauseOnHover={false}
-        style={{ overflow: "hidden", whiteSpace: "nowrap" }}
-      >
-        <Text
-          color="brand.main"
-          fontWeight="semibold"
-          fontSize={{ base: "5xl", md: "7xl" }}
-          letterSpacing="wide"
-          lineHeight="1.2"
-          mx="40px" // 左右留白
-        >
-          {t("home.marquee")}
-        </Text>
-      </Marquee>
-    );
-  };
 
   return (
     <Box bg="brand.light">
       {/* Hero Section */}
       <Image
         src={brandImage}
-        w="100vw"
-        h={{ base: "75vw", md: "auto" }}
+        w={{ base: "auto", md: "100vw" }}
+        h={{ base: "133vw", md: "auto" }}
         objectFit="cover"
         objectPosition="center"
       />
-      <Box py="6.5vw">
+      <Box pt={{ base: "13.7vw", md: "6.15vw" }}>
         <ContentGrid />
-        <Box textAlign="center" mt={8}>
+        <Box textAlign="center" mt={{ base: "10vw", md: "2.2vw" }}>
           <ChakraLink
             as={RouterLink}
             to="/collection"
             color="brand.main"
-            fontSize="lg"
+            variant={"Link-header"}
             fontWeight="medium"
             _hover={{ textDecoration: "none" }}
           >
             {t("home.more-product")}
           </ChakraLink>
         </Box>
-        <Box pt="6.5vw">
-          <HeroMarquee />
+        <Box
+          pt={{ base: "15.2vw", md: "5.3vw" }}
+          pb={{ base: "20.3vw", md: "5.3vw" }}
+        >
+          <HeroMarquee text={t("home.marquee")} />
         </Box>
       </Box>
 
       {/* Features Section */}
 
       {/* CTA Section */}
-      <Box bg="brand.mid" py="6.5vw">
+      <Box bg="brand.mid" py={{ base: "15.3vw", md: "6.5vw" }}>
         <ContentContainer>
           <VStack alignItems={"center"}>
             <Box>
-              <Image src={iconImage} w={"12vw"} position={"center"} />
+              <Image
+                src={iconImage}
+                w={{ base: "32vw", md: "12vw" }}
+                position={"center"}
+              />
             </Box>
             <Flex w="full" py={8}>
-              <Box flex="1">
-                <Heading mb={4} color={"brand.main"}>
+              <Box
+                flex="1"
+                maxW={{ base: "65vw", md: "34vw" }}
+                mx={{ base: "auto", md: "0" }}
+              >
+                <Text
+                  mb={4}
+                  variant="heading-main"
+                  textAlign={{ base: "center", md: "left" }}
+                >
                   {t("home.Brand-symbolism")}
-                </Heading>
-                <Text w={{ md: "34vw", base: "full" }}>
-                  {t("home.Brand-symbolism-text")}
                 </Text>
+
+                <Text>{t("home.Brand-symbolism-text")}</Text>
               </Box>
             </Flex>
+
             <Flex justifyContent={"flex-end"} w="full">
-              <Image src={iconSequence} w={"51vw"} />
+              <Image src={iconSequence} w={{ base: "100%", md: "51vw" }} />
             </Flex>
           </VStack>
         </ContentContainer>

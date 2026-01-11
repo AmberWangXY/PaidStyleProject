@@ -49,7 +49,7 @@ const Footer = () => {
       /* 第二栏：导航页 */
     }
     return (
-      <VStack align="flex-start" spacing={3}>
+      <VStack align="flex-start" spacing={{ base: "9.8vw", md: 3 }}>
         <Text variant="Text-footer-heading" mb={2}>
           {t("footer.pages")}
         </Text>
@@ -69,13 +69,15 @@ const Footer = () => {
     return (
       <VStack
         align="flex-start"
-        spacing={3}
+        spacing={{ base: "9.8vw", md: 3 }}
         maxW={{ base: "38vw", md: "23vw" }}
       >
         <Text variant="Text-footer-heading" mb={2}>
           {t("navigation.contact")}
         </Text>
-        <Text variant={"Text-footer"}>{t("footer.address")}</Text>
+        <Text variant={"Text-footer"} lineHeight={"1.4"}>
+          {t("footer.address")}
+        </Text>
 
         <Text variant={"Text-footer"}>Contact@paidstyle.co</Text>
       </VStack>
@@ -83,13 +85,13 @@ const Footer = () => {
   };
   const QrCode = () => {
     return (
-      <HStack spacing={4}>
+      <HStack spacing={{ base: "30vw", md: 4 }}>
         <VStack spacing={2}>
           <Flex
             bg="#D9D9D9"
-            w={{ base: "9.2vw", md: "5vw" }}
+            w={{ base: "18.3vw", md: "5vw" }}
             aspectRatio={1 / 1}
-            borderRadius="0.99vw"
+            borderRadius={{ base: "3.8vw", md: "0.99vw" }}
             align="center"
             justify="center"
           >
@@ -102,9 +104,9 @@ const Footer = () => {
         <VStack spacing={2}>
           <Flex
             bg="#D9D9D9"
-            w={{ base: "9.2vw", md: "5vw" }}
+            w={{ base: "18.3vw", md: "5vw" }}
             aspectRatio={1 / 1}
-            borderRadius="0.99vw"
+            borderRadius={{ base: "3.8vw", md: "0.99vw" }}
             align="center"
             justify="center"
           >
@@ -117,7 +119,7 @@ const Footer = () => {
   };
   return (
     <Box bg={bg} color={color}>
-      <ContentContainer py="6.5vw">
+      <ContentContainer py={{ md: "6.5vw", base: "9.5vw" }}>
         {!isMobile ? (
           <Flex
             justify="space-between"
@@ -141,13 +143,12 @@ const Footer = () => {
             justify="flex-start"
             align="flex-start"
             wrap="wrap"
-            gap="6vw"
             direction={"column"}
             w="full"
           >
             {/* 第一栏：Logo */}
 
-            <Image src={logo} alt="Paidstyle Logo" w="25.8vw" />
+            <Image src={logo} alt="Paidstyle Logo" w="40vw" />
 
             <Flex
               justify="space-between"
@@ -155,6 +156,8 @@ const Footer = () => {
               wrap="wrap"
               gap="auto"
               w="full"
+              mt={"21vw"}
+              mb={"25.6vw"}
             >
               <NavigationBar />
               <ContactBar />

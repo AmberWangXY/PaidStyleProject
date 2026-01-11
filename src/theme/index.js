@@ -1,7 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const pxToVw = (px) => `${(px / 1512) * 100}vw`;
-const pxToVwSm = (px) => `${(px / 832) * 100}vw`;
+//const pxToVwSm = (px) => `${(px / 832) * 100}vw`;
 const pxToVwMobile = (px) => `${(px / 395) * 100}vw`;
 // Brand Colors
 const brandColors = {
@@ -17,6 +17,17 @@ const theme = extendTheme({
   fonts: {
     heading: "Montserrat, sans-serif",
     body: "Inter, sans-serif",
+  },
+  fontWeights: {
+    hairline: 100,
+    thin: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900,
   },
   textStyles: {
     sm: { fontSize: pxToVw(16) }, //1.058vw
@@ -74,7 +85,8 @@ const theme = extendTheme({
         "moment-button": {
           bg: "brand.light",
           color: "brand.dark",
-          fontSize: { base: pxToVwSm(16), md: pxToVw(16) },
+          fontSize: { base: pxToVwMobile(10), md: pxToVw(16) },
+          lineHeight: { base: "1.2", md: "1.25" },
           _hover: {
             transform: "scale(1.05)",
             transition: "all 0.2s ease",
@@ -91,25 +103,25 @@ const theme = extendTheme({
         "contact-submit": {
           color: "brand.main",
           bg: "none",
-          fontWeight: "bold",
-          fontSize: { base: pxToVwSm(24), md: pxToVw(24) },
+          fontWeight: { md: "bold", base: "black" },
+          fontSize: { base: pxToVwMobile(24), md: pxToVw(24) },
         },
       },
     },
     Heading: {
       baseStyle: {
         fontFamily: "Montserrat, sans-serif",
-        fontSize: { base: pxToVwSm(20), md: pxToVw(36) },
-        lineHeight: "1.36",
-        fontWeight: { base: "Bold", md: "SemiBold" },
+        fontSize: { base: pxToVwMobile(20), md: pxToVw(36) },
+        lineHeight: { md: "1.36", base: "2.45" },
+        fontWeight: "semibold",
         color: "brand.main",
       },
       variants: {
         "heading-36px": {
           fontFamily: "Montserrat, sans-serif",
-          fontSize: { base: pxToVwSm(20), md: pxToVw(36) },
+          fontSize: { base: pxToVwMobile(20), md: pxToVw(36) },
           lineHeight: "1.17",
-          fontWeight: { base: "black", md: "Bold" },
+          fontWeight: { base: "black", md: "bold" },
           color: "brand.dark",
         },
       },
@@ -118,40 +130,56 @@ const theme = extendTheme({
       baseStyle: {
         fontFamily: "Montserrat, sans-serif",
         color: "brand.Dark",
-        fontSize: { base: pxToVwSm(24), md: pxToVw(24) },
-        lineHeight: "1.58",
+        fontSize: { base: pxToVwMobile(14), md: pxToVw(24) },
+        lineHeight: { md: "1.58", base: "1.285" },
       },
       variants: {
         "text-collection": {
-          fontSize: { base: pxToVwSm(20), md: pxToVw(20) },
-          lineHeight: "1.1",
+          fontSize: { base: pxToVwMobile(8), md: pxToVw(20) },
+          lineHeight: { md: "1.2", base: "auto" },
         },
         "Text-footer": {
           fontFamily: "Montserrat, sans-serif",
           color: "brand.mid",
           fontSize: { base: pxToVwMobile(14), md: pxToVw(16) },
-          lineHeight: "1.25",
+          lineHeight: { md: "1.25", base: "2.57" },
+
           fontWeight: "regular",
         },
         "Text-footer-heading": {
           fontFamily: "Montserrat, sans-serif",
           color: "brand.main",
           fontSize: { base: pxToVwMobile(14), md: pxToVw(20) },
+          lineHeight: { md: "1.58", base: "3.5" },
 
           fontWeight: "semibold",
         },
         "Text-36px-heading": {
           fontFamily: "Montserrat, sans-serif",
           color: "brand.light",
-          fontSize: { base: pxToVwMobile(20), md: pxToVw(36) },
-          lineHeight: "1.36",
-          fontWeight: "bold",
+          fontSize: { base: pxToVwMobile(18), md: pxToVw(36) },
+          lineHeight: { base: "1.44", md: "1.36" },
+          fontWeight: { md: "bold", base: "extrabold" },
         },
         "collection-heading-36px": {
           fontFamily: "Montserrat, sans-serif",
-          fontSize: { base: pxToVwSm(36), md: pxToVw(36) },
-          lineHeight: "1.17",
-          fontWeight: { base: "Bold", md: "black" },
+          fontSize: { base: pxToVwMobile(18), md: pxToVw(36) },
+          lineHeight: { base: "1.44", md: "1.17" },
+          fontWeight: { base: "extrabold", md: "black" },
+          color: "brand.dark",
+        },
+        "heading-main": {
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: { base: pxToVwMobile(20), md: pxToVw(36) },
+          lineHeight: { md: "1.36", base: "2.45" },
+          fontWeight: { md: "bold", base: "semibold" },
+          color: "brand.main",
+        },
+        "contact-dark": {
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: { base: pxToVwMobile(20), md: pxToVw(24) },
+          lineHeight: { md: "1.5", base: "1.8" },
+          textAlign: { base: "left", md: "center" },
           color: "brand.dark",
         },
       },
@@ -164,12 +192,13 @@ const theme = extendTheme({
         "Link-footer": {
           fontFamily: "Montserrat, sans-serif",
           color: "brand.mid",
+          lineHeight: { md: "1.36", base: "2.58" },
           fontSize: { base: pxToVwMobile(14), md: pxToVw(16) },
         },
         "Link-header": {
           fontFamily: "Montserrat, sans-serif",
-
-          fontSize: pxToVw(24),
+          lineHeight: { base: "0.9", md: "auto" },
+          fontSize: { base: pxToVwMobile(20), md: pxToVw(24) },
         },
       },
     },
@@ -196,6 +225,28 @@ const theme = extendTheme({
     },
     Input: {
       variants: {
+        "input-contact": {
+          field: {
+            bg: "transparent",
+            border: "none",
+            outline: "none",
+            boxShadow: "none",
+            px: 0,
+            lineHeight: { base: "2", md: "1.5" },
+            fontSize: { base: pxToVwMobile(20), md: pxToVw(24) },
+
+            _placeholder: {
+              color: "brand.dark",
+              opacity: 1,
+            },
+
+            _focusVisible: {
+              border: "none",
+              boxShadow: "none",
+              outline: "none",
+            },
+          },
+        },
         brand: {
           field: {
             border: "2px solid",

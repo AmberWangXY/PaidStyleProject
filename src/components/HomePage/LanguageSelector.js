@@ -25,13 +25,15 @@ const LANGUAGES = [
   { code: "it", label: "Italiano" },
 ];
 
-const LanguageSelector = () => {
+const LanguageSelector = ({ scrolled = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const isCollectionPage = location.pathname.startsWith("/collection");
+  const isDarkMode = isCollectionPage || scrolled;
   const getLangName = (locale) =>
     LANGUAGES.find((lang) => lang.code === locale)?.label || locale;
+
   return (
     <Menu isOpen={isOpen} onClose={() => setIsOpen(false)}>
       <MenuButton
@@ -45,10 +47,10 @@ const LanguageSelector = () => {
         py="0.4vw"
         px="1vw"
         border="0.5px solid rgba(255, 255, 255, 0.3)"
-        borderColor={isCollectionPage ? "brand.dark" : ""}
+        borderColor={isDarkMode ? "brand.dark" : ""}
         borderRadius="0.66vw"
-        color={isCollectionPage ? "brand.dark" : "brand.light"}
-        fontWeight={"regular"}
+        color={isDarkMode ? "brand.dark" : "brand.light"}
+        fontWeight={"normal"}
         fontSize={"1.587vw"}
         _hover={{ bg: "rgba(0, 0, 0, 0.3)" }}
         _expanded={{
@@ -75,7 +77,7 @@ const LanguageSelector = () => {
               as={LuChevronDown}
               boxSize="1.58vw"
               strokeWidth={2}
-              color={isCollectionPage ? "brand.dark" : "brand.light"}
+              color={isDarkMode ? "brand.dark" : "brand.light"}
             />
           )}
         </Flex>

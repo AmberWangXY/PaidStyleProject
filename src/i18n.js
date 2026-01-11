@@ -45,6 +45,22 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    detection: {
+      order: ["localStorage", "navigator", "htmlTag", "path", "subdomain"],
+      caches: ["localStorage"],
+    },
   });
+// ✅ 核心修复：自动把 zh-CN / zh-TW / zh 映射为 cn
+if (i18n.language && i18n.language.startsWith("zh")) {
+  i18n.changeLanguage("cn");
+}
+
+// ✅ （可选）修复某些浏览器返回带国家码的语言
+if (i18n.language && i18n.language.includes("-")) {
+  const shortLang = i18n.language.split("-")[0];
+  if (resources[shortLang]) {
+    i18n.changeLanguage(shortLang);
+  }
+}
 
 export default i18n;

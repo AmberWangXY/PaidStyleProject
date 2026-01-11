@@ -22,6 +22,8 @@
     "content": "PaidStyle est né d’une passion pour la mode haut de gamme et l’artisanat de qualité. Nous croyons que le style ne se limite pas à ce que vous portez, mais à la façon dont vous vous sentez en le portant.",
     "point-of-origin": "Point d’origine",
     "where-it-begin": "Là où\n Tout a\nCommencé",
+    "where-it-begin-line": "Là où Tout a Commencé",
+    "marquee-text": "Chaque style a son prix.",
     "where-it-brgin-text": "J’ai autrefois élevé deux hérissons à Los Angeles. Ils semblaient trop sur la défensive, trop piquants. Alors, je les ai relâchés dans les collines d’Hollywood. \nEn les voyant disparaître dans la nature, j’ai compris que leurs piquants n’étaient pas des armes, mais une carapace protectrice — une défense douce pour survivre dans un monde vaste. \nC’est alors que j’ai compris : comme ces hérissons, les personnes au style affirmé l’utilisent comme protection pour rester fidèles à elles-mêmes. \nPaidstyle existe pour célébrer et protéger cette armure personnelle à travers ses produits.",
     "Brand-Philosophy": "Philosophie de la marque",
     "Brand-Philosophy-text": "Paidstyle est une marque de parfums et d’esthétique de vie fondée sur la sincérité, la modération et la chaleur. Elle défend la philosophie de « payer pour son style », transformant les détails du quotidien en une pratique d’élégance personnelle grâce aux matériaux et au savoir-faire artisanal."
@@ -47,7 +49,9 @@
     "moment4": "Poire de Neige",
     "moment5": "Créatures Épineuses",
     "moment6": "Jardin Blanc",
-    "moment7": "Magnolia des Falaises"
+    "moment7": "Magnolia des Falaises",
+    "design-inspiration": "Inspiration du Design",
+    "design-inspiration-text": "Paidstyle est une marque de parfums et d’esthétique lifestyle, ancrée dans les valeurs de sincérité, de modération et de chaleur. Elle défend la philosophie de « payer pour son style », transformant les détails du quotidien en une pratique d’élégance personnelle à travers les matériaux et le savoir-faire artisanal."
   },
   "contact": {
     "title": "Contactez-nous",

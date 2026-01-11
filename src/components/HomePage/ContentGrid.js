@@ -15,10 +15,10 @@ export const ContentGrid = () => {
     <ContentContainer>
       <Grid
         templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }}
-        gap="0.99vw"
+        gap={{ base: "1.86vw", md: "0.99vw" }}
       >
         {/* 第1行第1列：图片 */}
-        <GridItem>
+        <GridItem order={{ base: 1, md: "initial" }}>
           <Box position="relative" w="100%" aspectRatio={1 / 1}>
             {" "}
             {/* ✅ 保持正方形 */}
@@ -35,11 +35,11 @@ export const ContentGrid = () => {
         </GridItem>
 
         {/* 第1行第2列：brand.main 背景 + 文字 */}
-        <GridItem>
+        <GridItem order={{ base: 2, md: "initial" }}>
           <Box
             bg="brand.main"
             w="100%"
-            p="2vw"
+            p={{ base: "3vw", md: "2vw" }}
             aspectRatio={1 / 1}
             display="flex"
             flexDirection="column"
@@ -65,7 +65,7 @@ export const ContentGrid = () => {
         </GridItem>
 
         {/* 第1行第3列：图片 */}
-        <GridItem>
+        <GridItem order={{ base: 4, md: "initial" }}>
           <Box position="relative" w="100%" aspectRatio={1 / 1}>
             <Image
               src={images[1]}
@@ -80,23 +80,29 @@ export const ContentGrid = () => {
         </GridItem>
 
         {/* 第2行第1列：brand.main 背景 + 文字 */}
-        <GridItem>
+        <GridItem order={{ base: 3, md: "initial" }}>
           <Box
             bg="brand.main"
             position="relative"
             w="100%"
-            p="2vw"
+            p={{ base: "3vw", md: "2vw" }}
             aspectRatio={1 / 1}
             display="flex"
+            alignItems={{ base: "center", md: "flex-start" }}
+            justifyContent={{ base: "center", md: "flex-start" }}
           >
-            <Text color={"brand.light"} lineHeight={"1.2"}>
+            <Text
+              color={"brand.light"}
+              lineHeight={{ md: "1.2", base: "1.3" }}
+              textAlign={{ base: "center", md: "left" }}
+            >
               {t("home.grid-content-text")}
             </Text>
           </Box>
         </GridItem>
 
         {/* 第2行第2列：图片 */}
-        <GridItem>
+        <GridItem order={{ base: 5, md: "initial" }}>
           <Box position="relative" w="100%" aspectRatio={1 / 1}>
             <Image
               src={images[2]}
@@ -111,7 +117,7 @@ export const ContentGrid = () => {
         </GridItem>
 
         {/* 第2行第3列：图片 */}
-        <GridItem>
+        <GridItem order={{ base: 6, md: "initial" }}>
           <Box position="relative" w="100%" aspectRatio={1 / 1}>
             <Image
               src={images[3]}

@@ -5,6 +5,7 @@ import brandImage from "../assets/storypageIMG/storyBG.png";
 import iconImage from "../assets/storypageIMG/logoIcon2.png";
 import iconSequence from "../assets/homepageIMG/IconBySequence.svg";
 import { ContentContainer } from "../components/Layout/ContentContainer";
+import { HeroMarquee } from "../components/HomePage/marquee";
 
 const StoryPage = () => {
   const { t } = useTranslation();
@@ -15,8 +16,8 @@ const StoryPage = () => {
       <Box position="relative" w="100vw">
         <Image
           src={brandImage}
-          w="100vw"
-          h={{ base: "75vw", md: "auto" }}
+          w={{ base: "auto", md: "100vw" }}
+          h={{ base: "133vw", md: "auto" }}
           objectFit="cover"
           objectPosition="center"
         />
@@ -29,38 +30,50 @@ const StoryPage = () => {
           transform="translate(-50%, -50%)"
           color="brand.main"
           fontWeight="black"
-          fontSize={{ base: "4.32vw", md: "2.38vw" }}
+          fontSize={{ base: "3.6vw", md: "2.38vw" }}
           textAlign="center"
         >
           {t("story.point-of-origin")}
         </Box>
       </Box>
 
-      <Box py="6.5vw">
+      <Box py={{ base: "15.2vw", md: "6.15vw" }}>
         <ContentContainer>
           <Center pb="4.5vw">
-            <Image src={iconSequence} w={"32vw"} />
+            <Image src={iconSequence} w={{ base: "full", md: "32vw" }} />
           </Center>
           <Flex
             w="100%"
             direction={{ base: "column", md: "row" }}
             align={{ base: "center", md: "flex-start" }}
-            gap={{ base: "4vw", md: "0" }}
+            gap={{ base: "5.1vw", md: "0" }}
           >
             {/* 左侧标题 */}
             <Box flex="1" maxW={{ base: "100%", md: "28%" }}>
               <Heading
+                display={{ base: "block", md: "none" }}
                 whiteSpace="pre-line"
-                fontWeight={"bold"}
-                fontSize={{ md: "4.63vw", base: "7.8vw" }} //70px
-                lineHeight={{ md: "1.1" }}
+                fontWeight="semibold"
+                fontSize="5.1vw"
+                lineHeight="2.45"
+              >
+                {t("story.where-it-begin-line")}
+              </Heading>
+
+              {/* Desktop */}
+              <Heading
+                display={{ base: "none", md: "block" }}
+                whiteSpace="pre-line"
+                fontWeight="bold"
+                fontSize="4.63vw"
+                lineHeight="1.1"
               >
                 {t("story.where-it-begin")}
               </Heading>
             </Box>
 
             {/* 右侧正文 */}
-            <Box flex="2" maxW={{ base: "100%", md: "72%" }}>
+            <Box flex="2" maxW={{ base: "78%", md: "72%" }}>
               <Text
                 whiteSpace="pre-line" // ✅ 支持多段落间的换行
               >
@@ -74,7 +87,7 @@ const StoryPage = () => {
       {/* Features Section */}
 
       {/* CTA Section */}
-      <Box bg="brand.mid" py="6.5vw">
+      <Box bg="brand.mid" py={{ base: "15.2vw", md: "6.15vw" }}>
         <ContentContainer>
           <Flex
             w={{ base: "100%", md: "58.5vw" }}
@@ -84,22 +97,28 @@ const StoryPage = () => {
           >
             {/* 左侧标题 */}
             <Box
-              w={{ base: "100%", md: "34vw" }}
+              w={{ base: "78%", md: "34vw" }}
               py={{ base: 0, md: 8 }}
-              gap={{ base: "4vw", md: "0" }}
+              order={{ base: 2, md: 1 }}
             >
-              <Heading mb={4}>{t("home.Brand-symbolism")}</Heading>
+              <Text
+                mb={4}
+                variant="heading-main"
+                textAlign={{ base: "center", md: "left" }}
+              >
+                {t("home.Brand-symbolism")}
+              </Text>
               <Text>{t("home.Brand-symbolism-text")}</Text>
             </Box>
 
-            {/* 右侧正文 */}
-            <Box w={{ base: "25vw", md: "17vw" }}>
+            {/* 右侧logo */}
+            <Box w={{ base: "32vw", md: "17vw" }} order={{ base: 1, md: 2 }}>
               <Image src={iconImage} alt="PaidStyle Logo Icon" w="100%" />
             </Box>
           </Flex>
         </ContentContainer>
       </Box>
-      <Box py="6.5vw">
+      <Box py={{ base: "15.2vw", md: "6.15vw" }}>
         <ContentContainer>
           <Flex
             w="100%"
@@ -108,12 +127,32 @@ const StoryPage = () => {
             justifyContent={{ md: "flex-end" }}
             gap={{ base: "4vw", md: "0" }}
           >
-            <Box py={{ base: 0, md: 8 }} w={{ base: "100%", md: "47vw" }}>
-              <Heading mb={4}>{t("story.Brand-Philosophy")}</Heading>
+            <Box w={{ base: "78%", md: "47vw" }}>
+              <Text
+                mb={4}
+                variant="heading-main"
+                textAlign={{ base: "center", md: "left" }}
+              >
+                {t("story.Brand-Philosophy")}
+              </Text>
               <Text>{t("story.Brand-Philosophy-text")}</Text>
             </Box>
           </Flex>
         </ContentContainer>
+        <Box display={{ base: "block", md: "none" }} mt="14.2vw">
+          <HeroMarquee text={t("story.marquee-text")} />
+        </Box>
+        <Box display={{ base: "none", md: "block" }} mt={"5.3vw"}>
+          <Text
+            fontSize={"5.5vw"}
+            color="brand.main"
+            fontWeight="semibold"
+            lineHeight="1.2"
+            textAlign={"center"}
+          >
+            {t("story.marquee-text")}
+          </Text>
+        </Box>
       </Box>
     </Box>
   );

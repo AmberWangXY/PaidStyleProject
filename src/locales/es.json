@@ -22,6 +22,8 @@
     "content": "PaidStyle nació de una pasión por la moda de alta gama y la artesanía de calidad. Creemos que el estilo no se trata solo de lo que usas, sino de cómo te sientes al llevarlo.",
     "point-of-origin": "Punto de origen",
     "where-it-begin": "Donde\n   Todo\nComenzó",
+    "where-it-begin-line": "Donde Todo Comenzó",
+    "marquee-text": "Cada estilo tiene su precio.",
     "where-it-brgin-text": "Una vez cuidé a dos erizos en Los Ángeles. Parecían demasiado a la defensiva, demasiado afilados. Así que los liberé en las colinas de Hollywood.\nAl verlos desaparecer en la naturaleza, comprendí que sus púas no eran un arma, sino una coraza protectora — una defensa suave para sobrevivir en un mundo vasto.\nEntonces lo entendí: al igual que esos erizos, las personas con un estilo marcado lo usan como protección para mantenerse fieles a sí mismas.\nPaidstyle existe para celebrar y proteger esta armadura personal a través de nuestros productos.",
     "Brand-Philosophy": "Filosofía de la marca",
     "Brand-Philosophy-text": "Paidstyle es una marca de fragancias y estética de estilo de vida basada en los principios de sinceridad, moderación y calidez. Defiende la filosofía de “pagar por tu estilo”, transformando los detalles cotidianos en una práctica de elegancia personal mediante materiales y artesanía."
@@ -47,7 +49,9 @@
     "moment4": "Pera de Nieve",
     "moment5": "Criaturas de Espinas",
     "moment6": "Jardín Blanco",
-    "moment7": "Magnolia del Acantilado"
+    "moment7": "Magnolia del Acantilado",
+    "design-inspiration": "Inspiración de Diseño",
+    "design-inspiration-text": "Paidstyle es una marca de fragancias y estética lifestyle, arraigada en los valores de sinceridad, moderación y calidez. Defiende la filosofía de “pagar por tu estilo”, transformando los detalles cotidianos en una práctica de elegancia personal mediante materiales y artesanía."
   },
   "contact": {
     "title": "Ponte en contacto",
