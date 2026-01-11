@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/PaidStyleProject/static/js/main.b59f4db8.js",
+    "main.js": "/PaidStyleProject/static/js/main.a5825f24.js",
     "static/media/contactBG.png": "/PaidStyleProject/static/media/contactBG.61d086621b81313d93f8.png",
     "static/media/storyBG.png": "/PaidStyleProject/static/media/storyBG.16e460a9f780060ae5af.png",
     "static/media/HomeBgPic.jpg": "/PaidStyleProject/static/media/HomeBgPic.f1487457502c5ba366a7.jpg",
@@ -13,6 +13,7 @@
     "static/media/3.png": "/PaidStyleProject/static/media/3.8e408e54621849ecdb2a.png",
     "static/media/candle02.jpg": "/PaidStyleProject/static/media/candle02.b01a12794ea819eab24a.jpg",
     "static/media/candle11.jpg": "/PaidStyleProject/static/media/candle11.c3df5e04e13a5447dfd7.jpg",
+    "static/media/candle-collection01.jpg": "/PaidStyleProject/static/media/candle-collection01.de01abf10f8f4d8ba77a.jpg",
     "static/media/client2.png": "/PaidStyleProject/static/media/client2.8538b801268d9588b3d7.png",
     "static/media/client4.png": "/PaidStyleProject/static/media/client4.b231acaad08f7ba5e512.png",
     "static/media/client3.png": "/PaidStyleProject/static/media/client3.eb7a1de06fdb32f87569.png",
@@ -23,9 +24,9 @@
     "static/media/logoIcon.svg": "/PaidStyleProject/static/media/logoIcon.571a29d559bb8829cd4a696d8f2192ba.svg",
     "static/media/Logo.svg": "/PaidStyleProject/static/media/Logo.0ecbdb136ccc69f991c033cf3aa5d4bd.svg",
     "index.html": "/PaidStyleProject/index.html",
-    "main.b59f4db8.js.map": "/PaidStyleProject/static/js/main.b59f4db8.js.map"
+    "main.a5825f24.js.map": "/PaidStyleProject/static/js/main.a5825f24.js.map"
   },
   "entrypoints": [
-    "static/js/main.b59f4db8.js"
+    "static/js/main.a5825f24.js"
   ]
 }
